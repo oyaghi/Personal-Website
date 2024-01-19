@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* This is just an import to google fonts */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /* let the content to not exceed the parent border size */
+    scroll-behavior: smooth;
+}
+header {
+    background-color: rgb(0, 0, 0);
+    width:100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 200px;
+}
+
+header, header nav , header a{
+    color:rgb(26, 109, 224);
+}
+
+.logo{
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:1.8em;
+}
+.n a{
+    text-decoration:none;
+    font-weight: 500;
+    padding-left:30px;
+    font-size: 1.1em;
+}
+.n a:hover{
+    color:aqua;
+}
+section{
+    padding:100px 200px;
+}
+.main{
+    width:100%;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    background-image: url("images/3185113.jpg"); /* first background image  */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed ;
+    background-image:url("images/colorful-abstract-nebula-space-background.jpg") 
+    
+    
+}
+header a:visited{
+    color:blue;
+}
+.main h2{
+    color:#fff;
+    font-size: 1.4em;
+    font-weight: 500;
+
+}
+.main h2 span{
+    display:block;
+    margin-top: 10px;
+    color:rgb(16, 103, 173);
+    font-size:2em;
+    font-weight:600;
+}
+.main h3{
+    color:white;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    margin-top:10px;
+    margin-bottom: 30px;
+
+}
+.main_button{
+    display:inline-block;
+    text-decoration: none;
+    margin-bottom:20px;
+    padding:0.9375em 2.1875em;
+    font-size:1.1em;
+    font-weight:600;
+    background-color: blue;
+    color:white;
+    border-radius: 15px;
+    letter-spacing: 1px;
+
+
+    transition:0.8s ease; 
+}
+.main_button:hover{
+    background-color:rgb(40, 6, 71);
+    transform:scale(1.1)
+}
+.Social_icons a{
+    color:white;
+    font-size:1.3em;
+    padding-left:20px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 19em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.8s ease;
+}
+
+.card:hover {
+    background-color: gray;
+    transform: scale(1.1);
+    color:white;
+
+}
+.info h3{
+    transition: 0.8s ease;
+}
+.card:hover .info h3{
+    color:white;
+    transform: scale(1.1);
+}
+.icon{
+    color:blue;
+    font-size:6em;
+    text-align:center;
+}
+.info{
+    text-align:center;
+}
+.info h3{
+    color:#012996;
+    font-size:1.2em;
+    font-weight:700;
+    margin:10px;
+
+}
+
+
+.projects{
+    background-color: rgb(2 2 2)
+}
+.projects content{
+    margin-top: 30px;
+}
+.card2{
+    background-color: #fff;
+    border:1px solid white;
+    min-height: 14em;
+    width:23em;
+    overflow: hidden;
+    border-radius: 15px;
+    margin:20px;
+    transition: 0.8s ease;
+}
+.card2:hover{
+    transform: scale(1.1);
+}
+
+.card2:hover .card_image{
+    opacity: 0.9;
+}
+
+.card_image img{
+    width:100%;
+    height:200px;
+
+    
+}
+.info2{
+    padding:1em;
+
+}
+.category{
+    font-size: 0.8em;
+}
+.project-title{
+    display:flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight:800;
+    margin-top:10px;
+}
+.more_details{
+text-decoration: none;
+color:#012996;
+}
+
+.more_details:hover{
+    color:blueviolet;
+}
+
+.card3{
+    width:21.25em;
+    background-color: rgb(250 250 250);
+    display:flex;
+    
+    border:1px solid red;
+    border-radius: 15px;
+
+}
+.card3_icon{
+    text-align: center;
+    font-size: 4em;
+    color:#012996;
+}
+.first_info{
+    text-align: center;
+    font-size: 1.3em;
+
+}
+
+footer{
+   width:100%;
+   display: flex;
+   justify-content: space-between;
+   background-color: black;
+   padding:2em;
+
+
+
+}
+.links a{
+    color:white;
+    font-size: 1.2em;
+    padding-left:20px;
+}
+.das{
+    color:#3a6cf4;
+
+
+}
+.final{
+    color:white;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+        
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.skills{
+    background-color: rgb(2,2,2);
+}
+
+
+
+
+
+
+
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+}
+
+
+
+
+
+
+
+
+
+
